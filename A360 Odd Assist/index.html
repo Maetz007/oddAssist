@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/stylesheets/a360-8ball.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="assets/javascripts/a360-8ball.js" charset="utf-8"></script>
+  <script src="assets/javascripts/jquery.shaker.js" charset="utf-8"></script>
+  <title>A360 - Odd Assist</title>
+</head>
+<body>
+  <header>
+    <img src='assets/images/a360-logo.png' alt='Accessible360 logo'>
+  </header>
+  <main>
+    <h1 class="page-heading">Welcome to Odd Assist</h1>
+    <h2 class="page-heading">A360's Magic 8-Ball Answer To Everything!</h2>
+    <p class="question-format">Simply think of a question that has a yes or no answer, then press the "Shake 8-Ball button!".</p>
+    <div class="shaker-wrapper">
+      <div class="shaker-container">
+        <p class="sr-only">Clicking the "Shake 8-ball" button will remove the button and reveal a random answer after a few seconds.
+          After the answer has been revealed, focus will be returned to this button.</p>
+        <div class="center-image">
+          <img class="start-image" src='assets/images/start.png' alt="Smiling 8-ball face">
+          <img class="shake-image" src='assets/images/shake.png' alt="frowning 8-ball face with clenched teeth - visually shaking">
+          <img class="end-image" src='assets/images/end.png' alt="Coughing 8-ball face - visually spitting out answer">
+        </div>
+      <button class="shake">Shake 8-Ball!</button>
+      <div>
+        <img class="answer-splat" src='assets/images/splatter.png' alt='8-ball cough up!'>
+        <h3 class="sr-only">Answer:</h3>
+        <p class="answer" role="alert" aria-live="polite"></p>
+      </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

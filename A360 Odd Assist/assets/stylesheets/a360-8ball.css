@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: #e5e5e5;
+}
+
+header, .page-heading, .center-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  margin: 1em;
+}
+
+header img {
+  height: 60px;
+  border-radius: 8px;
+}
+
+.page-heading, .answer, .shake, .question-format {
+  color: #006888;
+}
+
+.shaker-wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.shaker-container {
+  border: 3px solid;
+  border-radius: 8px;
+  padding: 7px;
+  background: #FFF;
+  height: 450px;
+}
+
+.question-format {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shake {
+  padding: 0.5em;
+  position: relative;
+  margin-top: 72px;
+  float: right;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 23px;
+  border: 3px solid;
+  border-radius: 8px;
+}
+
+.answer {
+  text-align: center;
+  margin-right: 30%;
+  padding: 15px;
+  padding-top: 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.shake-image, .end-image, .answer-splat {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px); // IE 6 and 7
+  clip: rect(1px,1px,1px,1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+}
