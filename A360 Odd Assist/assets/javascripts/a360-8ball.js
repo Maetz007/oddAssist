@@ -10,7 +10,6 @@ $(document).ready(function() {
     $(".shake").hide();
     $(".start-image").fadeOut("slow", function() {
       $(".shake-image").fadeIn(function() {
-        $(".shake-image").shakker({x: true, y: true});
         var time = 3;
         var timer = setInterval(function() {
           time--;
